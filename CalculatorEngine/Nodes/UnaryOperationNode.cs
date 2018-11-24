@@ -2,13 +2,15 @@
 
 namespace CalculatorEngine.Nodes
 {
-    public abstract class UnaryOperationNode<T> : Node<T>
+    public abstract class UnaryOperationNode : INode
     {
-        protected INode<T> Value { get; }
+        protected INode Value { get; }
 
-        internal UnaryOperationNode(INode<T> value)
+        internal UnaryOperationNode(INode value)
         {
             this.Value = value ?? throw new ArgumentNullException(nameof(value));
         }
+
+        public abstract double Evaluate();
     }
 }

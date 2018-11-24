@@ -1,14 +1,14 @@
 ﻿namespace CalculatorEngine.Nodes
 {
-    public sealed class ConstantNode : Node<decimal>
+    public sealed class ConstantNode : INode
     {
-        private readonly decimal value;
+        private readonly double value;
 
-        public ConstantNode(decimal value)
+        public ConstantNode(double value)
         {
             this.value = value;
         }
 
-        public override decimal Evaluate() => this.value;
+        public double Evaluate() => this.value;
     }
 }

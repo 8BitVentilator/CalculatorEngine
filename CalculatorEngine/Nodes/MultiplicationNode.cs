@@ -1,11 +1,11 @@
 ﻿namespace CalculatorEngine.Nodes
 {
-    public sealed class MultiplicationNode : BinaryOperationNode<decimal>
+    public sealed class MultiplicationNode : BinaryOperationNode
     {
-        public MultiplicationNode(INode<decimal> left, INode<decimal> right)
+        public MultiplicationNode(INode left, INode right)
             : base(left, right)
         { }
 
-        public override decimal Evaluate() => this.Left.Evaluate() * this.Right.Evaluate();
+        public override double Evaluate() => this.Left.Evaluate() * this.Right.Evaluate();
     }
 }

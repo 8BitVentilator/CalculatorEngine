@@ -1,11 +1,11 @@
 ﻿namespace CalculatorEngine.Nodes
 {
-    public sealed class NegationNode : UnaryOperationNode<decimal>
+    public sealed class NegationNode : UnaryOperationNode
     {
-        public NegationNode(INode<decimal> evaluable)
+        public NegationNode(INode evaluable)
             : base(evaluable)
         { }
 
-        public override decimal Evaluate() => -this.Value.Evaluate();
+        public override double Evaluate() => -this.Value.Evaluate();
     }
 }

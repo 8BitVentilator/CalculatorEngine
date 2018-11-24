@@ -8,8 +8,8 @@ namespace CalculatorEngine.Test
         [Fact]
         public void ConstantTest()
         {
-            var sut = new ConstantNode(12.34m);
-            Assert.Equal(12.34m, sut.Evaluate());
+            var sut = new ConstantNode(12.34);
+            Assert.Equal(12.34, sut.Evaluate());
         }
 
         [Fact]

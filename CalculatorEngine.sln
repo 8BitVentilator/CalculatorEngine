@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorEngine", "CalculatorEngine\CalculatorEngine.csproj", "{F9CD39D2-9AFC-46C2-B685-2A7B392DAEA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorEngine", "CalculatorEngine\CalculatorEngine.csproj", "{F9CD39D2-9AFC-46C2-B685-2A7B392DAEA8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorEngine.Test", "CalculatorEngine.Test\CalculatorEngine.Test.csproj", "{A4CA9B8A-09AA-4BEA-8324-8C800A5C638C}"
 EndProject

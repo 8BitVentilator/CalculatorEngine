@@ -2,15 +2,17 @@
 
 namespace CalculatorEngine.Nodes
 {
-    public abstract class BinaryOperationNode<T> : Node<T>
+    public abstract class BinaryOperationNode : INode
     {
-        protected INode<T> Left { get; }
-        protected INode<T> Right { get; }
+        protected INode Left { get; }
+        protected INode Right { get; }
 
-        internal BinaryOperationNode(INode<T> left, INode<T> right)
+        internal BinaryOperationNode(INode left, INode right)
         {
             this.Left = left ?? throw new ArgumentNullException(nameof(left));
             this.Right = right ?? throw new ArgumentNullException(nameof(right));
         }
+
+        public abstract double Evaluate();
     }
 }
