@@ -4,8 +4,8 @@ namespace CalculatorEngine.Nodes
 {
     public abstract class BinaryOperationNode : INode
     {
-        protected INode Left { get; }
-        protected INode Right { get; }
+        public INode Left { get; }
+        public INode Right { get; }
 
         internal BinaryOperationNode(INode left, INode right)
         {

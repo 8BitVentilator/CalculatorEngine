@@ -4,7 +4,7 @@ namespace CalculatorEngine.Nodes
 {
     public abstract class UnaryOperationNode : INode
     {
-        protected INode Value { get; }
+        public INode Value { get; }
 
         internal UnaryOperationNode(INode value)
         {

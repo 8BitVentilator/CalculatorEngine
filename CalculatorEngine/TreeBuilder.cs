@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace CalculatorEngine
 {
-    public class TreeBuilder
+    internal class TreeBuilder
     {
-        internal INode Build(IEnumerable<IToken> tokens)
+        public INode Build(IEnumerable<IToken> tokens)
         {
             Stack<INode> stack = new Stack<INode>();
 
